@@ -4,4 +4,4 @@ RUN mkdir /code
 WORKDIR /code
 ADD backend/requirements/base.txt backend/requirements/dev.txt /code/
 RUN pip install -r base.txt -r dev.txt
-ADD . /code/
+ADD /backend/ /code/
