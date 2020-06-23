@@ -25,7 +25,7 @@ SECRET_KEY = 'e6*rh$g7*8z9-^===+knf$e&^41$0hba=fs@osdomz^mi6x(qh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
