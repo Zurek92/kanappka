@@ -13,3 +13,11 @@ services:
       - ./backend:/code
     depends_on:
       - postgres
+  bootstrap:
+    build:
+      context: .
+      dockerfile: ./backend/compose/django/Dockerfile
+    command: python manage.py migrate
+    depends_on:
+      - postgres
+      - django
