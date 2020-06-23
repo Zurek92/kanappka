@@ -21,3 +21,13 @@ services:
     depends_on:
       - postgres
       - django
+  react:
+    build:
+      context: .
+      dockerfile: ./frontend/compose/node/Dockerfile
+    stdin_open: true
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/code
